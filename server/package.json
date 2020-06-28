@@ -4,26 +4,20 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "8.1.1",
-    "npm": "5.0.3"
+    "node": "12.16.3",
+    "npm": "6.14.4"
   },
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \" npm run client \""
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^5.1.0",
-    "cookie-parser": "^1.4.4",
     "cookie-session": "^1.4.0",
     "express": "^4.17.1",
-    "express-session": "^1.17.0",
-    "mongodb": "^3.5.2",
-    "mongoose": "^5.8.9",
-    "nodemon": "^2.0.2",
+    "mongoose": "^5.9.15",
+    "nodemon": "^2.0.4",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0"
   }
