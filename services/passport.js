@@ -30,7 +30,7 @@ passport.use(
       if (existingUser) {
         return done(null, existingUser);
       }
-      console.log(profile);
+      
       const user = await new User({ googleId: profile.id }).save();
       return done(null, user);
 
