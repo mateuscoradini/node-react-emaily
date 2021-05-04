@@ -7,7 +7,7 @@ export default (emails) => {
         .filter(email => regularExpression.test(email) === false);
 
     if (invalidEmailsArray.length) {
-        return `These emails are invalid: ${invalidEmailsArray}`;
+        return 'These emails are invalid: ${invalidEmailsArray}';
     }
 
     return;
