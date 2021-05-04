@@ -11,8 +11,6 @@ require('./services/passport');
 mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
 
 const app = express();
-
-
 app.use(bodyParser.json());
 
 app.use(

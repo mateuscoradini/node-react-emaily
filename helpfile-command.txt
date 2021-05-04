@@ -1,1 +1,2 @@
 git push --force heroku `git subtree split --prefix server HEAD`:master
+npx ngrok http 5000
